@@ -15,11 +15,13 @@ function rollDice(){
     document.querySelector(".container h1").innerHTML = "Draw!";
   }
 }
-
-if(window.performance.navigation.type === 1){
+ if(window.performance.navigation.type === 1){
   rollDice();
 }
 
-
-
-// document.getElementsByTagName("img")[0].setAttribute("src", img1dice);
+if( Math.floor(Math.random()*1000) === 207){
+    document.querySelector("body").style.backgroundColor = "white";
+    document.querySelector(".img1").setAttribute("src", "images/dice2.png");
+    document.querySelector(".img2").setAttribute("src", "images/dice7.png");
+    document.querySelector(".container h1").innerHTML = "Easter Egg!";
+}
